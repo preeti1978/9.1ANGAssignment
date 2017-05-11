@@ -1,0 +1,12 @@
+table{
+	font-size: 2em;
+	font-family: Verdana;
+}
+
+th{
+	background-color: aqua;
+}
+
+td{
+	background-color: yellow;
+}

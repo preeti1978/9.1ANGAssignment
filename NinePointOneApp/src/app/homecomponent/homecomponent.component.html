@@ -1,0 +1,17 @@
+
+  homecomponent works!
+  <button (click)="getFood()">Get Food</button>
+  <table border=1 *ngIf="!foodsIsEmpty"><!--dont display any table is foods list is empty==-->
+  <!--dont display any table header if foods list is empty==-->
+  <tr *ngIf="!foodsIsEmpty">
+	  <th>Food</th>
+	  <th>Cost</th>
+  </tr>
+  <tr *ngFor="let food of foods">
+  	<td>{{food.name}}</td><td>{{food.cost}}</td>
+  </tr>
+  </table>
+<!--Including all other 3 components within home component-->
+<app-headercomponent></app-headercomponent>
+<app-containcomponent></app-containcomponent>
+<app-footercomponent></app-footercomponent>
